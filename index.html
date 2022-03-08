@@ -133,26 +133,71 @@ body {
 
 <div class="container-fluid mt-3">
 <div class="row">
-  <div class="col-sm-3 p-3 "> <div class="card" style="width:400px">
-
-    <div class="card-body">
-      <h4 class="card-title">John Doe</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">See Profile</a>
-    </div>
+  <div class="col-xl-4 p-3 "> <img id="myImg" src="pics\Dr Villarreal.jpg" alt="Dr. Angello Villarreal, a Spanish teacher at Freehold Township High School, was recently named the recipient of the 2022 Emerging PDS Leader Award (Professional Development School Leader). This national award is given by the National Association of Professional Development Schools. It is based on Dr. Villarreal’s partnership work with and on behalf of Monmouth University, including his participation in the Teacher Residency program, journal publication in PDS Partners, delivery of the PDS conference keynote address as part of a Monmouth team, and serving as a featured speaker for the NAPDS Antiracist Summit at this year’s conference." style="width:100%;max-width:300px">
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
   </div>
-  <br></div>
-  <div class="col-sm-3 p-3 "></div>
-  <div class="col-sm-3 p-3 "></div>
-  <div class="col-sm-3 p-3 "><iframe src="https:/twitter.com/home" height="500" width="300" title="Iframe Example"></iframe></div>
+  <script>
+  var modal = document.getElementById("myModal");
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  </script>
+
+ </div>
+
+ <div class="col-xl-4 p-3 "> <img id="myImg" src="pics\FMUcwQKWUAIcoVL.jpg" alt="The Monmouth Regional Chamber of Commerce hosts the annual Team Challenge event for all six Freehold Regional High School District schools. The purpose of the Team Challenge is to provide local high school students with hands-on experience in team building, creative problem solving, and dealing with the ethical decision-making process within the context of real-world business problems. Using the Markkula Center for Applied Ethics framework from Santa Clara University, teams from the high schools explored business issues that have complex ethical implications.
+
+The Chamber also offers participating students the chance to apply for a $500 scholarship. This year's recipients are Katrine Birkeland from Manalapan High School and Jonna Crocker from Howell High School. Both young ladies were recognized at a small reception on February 23, 2022, by Monmouth Regional Chamber members, state Senator Vin Gopal, and Freehold Regional High School District administrators." style="width:100%;max-width:300px">
+ <div id="myModal" class="modal">
+   <span class="close">&times;</span>
+   <img class="modal-content" id="img01">
+   <div id="caption"></div>
+ </div>
+ <script>
+ var modal = document.getElementById("myModal");
+ var img = document.getElementById("myImg");
+ var modalImg = document.getElementById("img01");
+ var captionText = document.getElementById("caption");
+ img.onclick = function(){
+   modal.style.display = "block";
+   modalImg.src = this.src;
+   captionText.innerHTML = this.alt;
+ }
+ var span = document.getElementsByClassName("close")[0];
+ span.onclick = function() {
+   modal.style.display = "none";
+ }
+
+ </script>
+  <div class="col-xl-4 p-3 "> <div class="container mt-3">
+
+
+
+<div class="container mt-3">
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+  </ol>
+  </div>
 </div>
 </div>
-
-
-
-  </div>
-
-<
+</div>
+</div>
+</div>
 
   </body>
 </html>
